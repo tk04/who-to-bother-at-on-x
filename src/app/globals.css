@@ -133,9 +133,9 @@ html.dark {
     @apply bg-background text-foreground scroll-smooth;
   }
   h1 {
-    @apply mb-12 flex items-center gap-2 text-2xl font-medium text-balance md:text-3xl;
+    @apply mb-10 flex items-center gap-2 text-xl font-medium text-balance md:text-2xl;
   }
   p {
-    @apply mb-8 text-sm text-black;
+    @apply mb-6 text-xs text-black;
   }
 }

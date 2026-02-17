@@ -91,7 +91,7 @@ export function Header() {
             {company ? (
               // Show "bother at [logo]" for company pages
               <>
-                <span className="font-medium text-lg">who to bother at</span>
+                <span className="font-medium text-base">who to bother at</span>
                 <div className="flex items-center [&>svg]:h-[18px] [&>svg]:w-auto">
                   {companyLogos[company.logoType]}
                 </div>
@@ -99,7 +99,7 @@ export function Header() {
             ) : (
               // Show default "who to bother on X" for other pages
               <>
-                <span className="font-medium text-lg">who to bother on</span>
+                <span className="font-medium text-base">who to bother on</span>
                 <svg
                   aria-hidden="true"
                   className="inline-block"

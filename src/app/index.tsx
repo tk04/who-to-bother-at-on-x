@@ -88,7 +88,7 @@ function HomePage() {
   return (
     <div className="text-zinc-900 dark:text-zinc-100">
       <main className="mx-auto flex max-w-3xl flex-col gap-4 px-6 pt-8 pb-16 md:pt-12 md:pb-24">
-        <h1 className="m-0 font-medium text-4xl text-zinc-900 md:text-5xl dark:text-zinc-100">
+        <h1 className="m-0 font-medium text-3xl text-zinc-900 md:text-4xl dark:text-zinc-100">
           who to bother on{" "}
           <svg
             className="inline-block"
@@ -105,7 +105,7 @@ function HomePage() {
           </svg>
         </h1>
 
-        <p className="m-0 text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="m-0 text-base text-zinc-600 dark:text-zinc-400">
           Find the right people to reach out to at your favorite tech companies
         </p>
 
@@ -174,13 +174,13 @@ function HomePage() {
                   target="_blank"
                 >
                   {logo ? <div className="mb-4">{logo}</div> : null}
-                  <h2 className="mb-2 font-semibold text-2xl text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
+                  <h2 className="mb-2 font-semibold text-xl text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
                     {company.name}
                   </h2>
-                  <p className="line-clamp-3 flex-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  <p className="line-clamp-3 flex-1 text-xs text-zinc-600 dark:text-zinc-400">
                     {company.description}
                   </p>
-                  <div className="mt-4 inline-flex items-center gap-2 font-medium text-orange-600 text-sm">
+                  <div className="mt-4 inline-flex items-center gap-2 font-medium text-orange-600 text-xs">
                     View contacts
                     <svg
                       fill="none"
@@ -210,13 +210,13 @@ function HomePage() {
                 to="/$company"
               >
                 {logo ? <div className="mb-4">{logo}</div> : null}
-                <h2 className="mb-2 font-semibold text-2xl text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
+                <h2 className="mb-2 font-semibold text-xl text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
                   {company.name}
                 </h2>
-                <p className="line-clamp-3 flex-1 text-sm text-zinc-600 dark:text-zinc-400">
+                <p className="line-clamp-3 flex-1 text-xs text-zinc-600 dark:text-zinc-400">
                   {company.description}
                 </p>
-                <div className="mt-4 inline-flex items-center gap-2 font-medium text-orange-600 text-sm">
+                <div className="mt-4 inline-flex items-center gap-2 font-medium text-orange-600 text-xs">
                   View contacts
                   <svg
                     fill="none"

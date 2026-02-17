@@ -163,7 +163,7 @@ function SearchPage() {
             Back to home
           </Link>
 
-          <h1 className="m-0 font-medium text-4xl text-zinc-900 md:text-5xl dark:text-zinc-100">
+          <h1 className="m-0 font-medium text-3xl text-zinc-900 md:text-4xl dark:text-zinc-100">
             Search companies & products
           </h1>
         </div>
@@ -254,7 +254,7 @@ const SearchResultCard = memo(function SearchResultCardComponent({
 
       <div className="min-w-0 flex-1">
         <div className="mb-1 flex items-center gap-2">
-          <h3 className="font-semibold text-lg text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
+          <h3 className="font-semibold text-base text-zinc-900 transition-colors group-hover:text-orange-600 dark:text-zinc-100">
             {result.name}
           </h3>
           <span

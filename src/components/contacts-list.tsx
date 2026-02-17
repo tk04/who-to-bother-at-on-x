@@ -154,7 +154,7 @@ function ContactItem({
     >
       <div className="flex-1">
         <button
-          className={`cursor-pointer text-left font-medium text-sm transition-colors hover:text-orange-600 md:text-base dark:hover:text-orange-600 ${
+          className={`cursor-pointer text-left font-medium text-xs transition-colors hover:text-orange-600 md:text-sm dark:hover:text-orange-600 ${
             isHighlighted
               ? "font-semibold text-orange-700 dark:text-orange-300"
               : "text-zinc-900 dark:text-zinc-100"
@@ -196,18 +196,18 @@ function ContactItem({
         {contact.handles.length <= 2 ? (
           contact.handles.map((handle) => (
             <a
-              className="inline-flex items-center gap-1.5 text-sm text-zinc-600 transition-colors hover:text-orange-600 md:text-base dark:text-zinc-400 dark:hover:text-orange-600"
+              className="inline-flex items-center gap-1.5 text-xs text-zinc-600 transition-colors hover:text-orange-600 md:text-sm dark:text-zinc-400 dark:hover:text-orange-600"
               href={`https://x.com/${handle.replace("@", "")}`}
               key={handle}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Avatar className="h-5 w-5 shrink-0">
+              <Avatar className="h-4 w-4 shrink-0">
                 <AvatarImage
                   alt={handle}
                   src={`https://unavatar.io/x/${handle.replace("@", "")}?fallback=https://avatar.vercel.sh/${handle.replace("@", "")}?size=400`}
                 />
-                <AvatarFallback className="bg-zinc-100 text-[10px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                <AvatarFallback className="bg-zinc-100 text-[8px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
                   {handle.slice(1, 3).toUpperCase()}
                 </AvatarFallback>
               </Avatar>
@@ -218,44 +218,44 @@ function ContactItem({
           <>
             {contact.handles.slice(0, 2).map((handle) => (
               <a
-                className="inline-flex items-center gap-1.5 text-sm text-zinc-600 transition-colors hover:text-orange-600 md:text-base dark:text-zinc-400 dark:hover:text-orange-600"
+                className="inline-flex items-center gap-1.5 text-xs text-zinc-600 transition-colors hover:text-orange-600 md:text-sm dark:text-zinc-400 dark:hover:text-orange-600"
                 href={`https://x.com/${handle.replace("@", "")}`}
                 key={handle}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Avatar className="h-5 w-5 shrink-0">
-                  <AvatarImage
-                    alt={handle}
-                    src={`https://unavatar.io/x/${handle.replace("@", "")}?fallback=https://avatar.vercel.sh/${handle.replace("@", "")}?size=400`}
-                  />
-                  <AvatarFallback className="bg-zinc-100 text-[10px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-                    {handle.slice(1, 3).toUpperCase()}
-                  </AvatarFallback>
-                </Avatar>
+              <Avatar className="h-4 w-4 shrink-0">
+                <AvatarImage
+                  alt={handle}
+                  src={`https://unavatar.io/x/${handle.replace("@", "")}?fallback=https://avatar.vercel.sh/${handle.replace("@", "")}?size=400`}
+                />
+                <AvatarFallback className="bg-zinc-100 text-[8px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                  {handle.slice(1, 3).toUpperCase()}
+                </AvatarFallback>
+              </Avatar>
                 <span className="leading-none">{handle}</span>
               </a>
             ))}
             <Popover>
-              <PopoverTrigger className="text-sm text-zinc-600 transition-colors hover:text-orange-600 md:text-base dark:text-zinc-400 dark:hover:text-orange-600">
+              <PopoverTrigger className="text-xs text-zinc-600 transition-colors hover:text-orange-600 md:text-sm dark:text-zinc-400 dark:hover:text-orange-600">
                 more
               </PopoverTrigger>
               <PopoverContent className="w-auto border-zinc-200 bg-white p-3 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
                 <div className="flex flex-col gap-2">
                   {contact.handles.slice(2).map((handle) => (
                     <a
-                      className="inline-flex items-center gap-1.5 text-sm text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
+                      className="inline-flex items-center gap-1.5 text-xs text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
                       href={`https://x.com/${handle.replace("@", "")}`}
                       key={handle}
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <Avatar className="h-5 w-5 shrink-0">
+                      <Avatar className="h-4 w-4 shrink-0">
                         <AvatarImage
                           alt={handle}
                           src={`https://unavatar.io/x/${handle.replace("@", "")}`}
                         />
-                        <AvatarFallback className="bg-zinc-100 text-[10px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+                        <AvatarFallback className="bg-zinc-100 text-[8px] text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
                           {handle.slice(1, 3).toUpperCase()}
                         </AvatarFallback>
                       </Avatar>
@@ -332,7 +332,7 @@ export function ContactsList({
           Back to home
         </Link>
 
-        <h1 className="mb-6 flex items-center gap-2 text-balance font-medium text-2xl text-zinc-900 md:text-3xl dark:text-zinc-100">
+        <h1 className="mb-6 flex items-center gap-2 text-balance font-medium text-xl text-zinc-900 md:text-2xl dark:text-zinc-100">
           who to bother at {logo} on{" "}
           <svg fill="none" height="30" viewBox="0 0 1200 1227" width="33">
             <title>X (Twitter) logo</title>
