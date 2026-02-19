@@ -91,7 +91,7 @@ export function Header() {
             {company ? (
               // Show "bother at [logo]" for company pages
               <>
-                <span className="font-medium text-lg">who to bother at</span>
+                <span className="font-medium text-lg">who to bother AT</span>
                 <div className="flex items-center [&>svg]:h-[18px] [&>svg]:w-auto">
                   {companyLogos[company.logoType]}
                 </div>
