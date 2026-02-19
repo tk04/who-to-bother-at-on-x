@@ -105,10 +105,6 @@ function HomePage() {
           </svg>
         </h1>
 
-        <p className="m-0 text-lg text-zinc-600 dark:text-zinc-400">
-          Find the right people to reach out to at your favorite tech companies
-        </p>
-
         {/* Search Input */}
         <form className="relative" onSubmit={handleSearch}>
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
