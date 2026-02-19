@@ -106,7 +106,7 @@ function HomePage() {
         </h1>
 
         <p className="m-0 text-lg text-zinc-600 dark:text-zinc-400">
-          Find the right people to reach out to at your favorite tech companies
+          Find the right companies to reach out to on twitter
         </p>
 
         {/* Search Input */}
