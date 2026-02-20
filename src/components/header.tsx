@@ -4,7 +4,6 @@ import {
   GithubIcon,
   HeartIcon,
   LogOut,
-  PlusIcon,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { companyLogos } from "@/components/company-logos";
@@ -46,13 +45,6 @@ export function Header() {
                 : "translate-x-0 opacity-100"
             }`}
           >
-            <Link
-              className="flex items-center gap-2 font-medium text-sm text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
-              to="/contribute"
-            >
-              <PlusIcon className="size-3.5" />
-              <span>Contribute</span>
-            </Link>
             <Link
               className="flex items-center gap-2 font-medium text-sm text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
               to="/sponsors"
@@ -143,13 +135,6 @@ export function Header() {
       >
         <div className="mx-auto flex h-12 max-w-3xl items-center justify-start px-6">
           <nav className="flex items-center gap-4">
-            <Link
-              className="flex items-center gap-2 font-medium text-sm text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
-              to="/contribute"
-            >
-              <PlusIcon className="size-3.5" />
-              <span>Contribute</span>
-            </Link>
             <Link
               className="flex items-center gap-2 font-medium text-sm text-zinc-600 transition-colors hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-600"
               to="/sponsors"
