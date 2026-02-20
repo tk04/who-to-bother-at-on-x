@@ -127,7 +127,7 @@ function HomePage() {
             aria-label="Search companies and products"
             className="w-full rounded-lg border-2 border-zinc-200 bg-white py-3 pr-4 pl-11 text-zinc-900 placeholder-zinc-400 transition-colors focus:border-orange-600 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-500 dark:focus:border-orange-600"
             onChange={(e) => setSearchTerm(e.target.value || null)}
-            placeholder="Search companies and products..."
+            placeholder="Search..."
             type="text"
             value={searchTerm}
           />
